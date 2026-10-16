@@ -5,122 +5,188 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Buffalo Ungvár — відео вашої гри</title>
 <meta name="description" content="Відеозапис вашої гри в більярдному клубі Buffalo Ungvár, Ужгород — прямо в Telegram.">
-<meta name="theme-color" content="#134330">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="table-hero">
-  <div class="table">
-    <div class="felt">
-      <i class="pocket tl"></i><i class="pocket tm"></i><i class="pocket tr"></i>
-      <i class="pocket bl"></i><i class="pocket bm"></i><i class="pocket br"></i>
-      <div class="ball eight" aria-hidden="true"><span>8</span></div>
-      <div class="ball three" aria-hidden="true"><span>3</span></div>
-      <div class="ball white" aria-hidden="true"></div>
-      <p class="club">Більярдний клуб Buffalo Ungvár, Ужгород</p>
-      <h1>Відео вашої гри — у Telegram</h1>
-      <p class="lead">Камера над столом записує партію. Відскануйте QR-код на столі — і за кілька хвилин бот надішле вам відео.</p>
-      <a class="cue" href="https://t.me/BuffaloUngvarVideoBot">Відкрити бота</a>
-      <p class="note">@BuffaloUngvarVideoBot</p>
+<nav class="nav" aria-label="Меню">
+  <div class="wrap">
+    <a class="brand" href="#">Buffalo Ungvár</a>
+    <a class="l" href="#how">Як це працює</a>
+    <a class="l" href="#prices">Ціни</a>
+    <a class="l" href="#pay">Оплата</a>
+    <a class="l" href="#contacts">Контакти</a>
+    <a class="btn sm" href="https://t.me/BuffaloUngvarVideoBot">Відкрити бота</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Більярдний клуб Buffalo Ungvár</p>
+    <h1>Ваша гра.<br>На відео.</h1>
+    <p class="lead">Камера над столом записує партію. Відскануйте QR-код на столі — і бот надішле відео в Telegram.</p>
+    <div class="actions">
+      <a class="btn" href="https://t.me/BuffaloUngvarVideoBot">Відкрити бота</a>
+      <a class="more" href="#prices">Ціни</a>
+    </div>
+
+    <div class="shot" role="img" aria-label="Кадр відео: більярдний стіл зверху">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="felt" cx="50%" cy="45%" r="70%">
+            <stop offset="0" stop-color="#2c8f61"/><stop offset=".6" stop-color="#1c6b47"/><stop offset="1" stop-color="#0f4430"/>
+          </radialGradient>
+          <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3a2418"/><stop offset="1" stop-color="#22140d"/>
+          </linearGradient>
+          <radialGradient id="vig" cx="50%" cy="50%" r="75%">
+            <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/>
+          </radialGradient>
+          <radialGradient id="shine" cx="35%" cy="30%" r="70%">
+            <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1600" height="900" fill="#0d0d0f"/>
+        <rect x="150" y="110" width="1300" height="680" rx="46" fill="url(#rail)"/>
+        <rect x="200" y="160" width="1200" height="580" rx="10" fill="url(#felt)"/>
+        <g fill="#060807">
+          <circle cx="205" cy="165" r="26"/><circle cx="800" cy="152" r="24"/><circle cx="1395" cy="165" r="26"/>
+          <circle cx="205" cy="735" r="26"/><circle cx="800" cy="748" r="24"/><circle cx="1395" cy="735" r="26"/>
+        </g>
+        <line x1="500" y1="160" x2="500" y2="740" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+        <g>
+          <circle cx="430" cy="470" r="19" fill="#f2efe6"/><circle cx="430" cy="470" r="19" fill="url(#shine)"/>
+          <circle cx="1040" cy="430" r="19" fill="#c9302a"/><circle cx="1040" cy="430" r="19" fill="url(#shine)"/>
+          <circle cx="1075" cy="410" r="19" fill="#f2efe6"/><circle cx="1075" cy="410" r="19" fill="url(#shine)"/>
+          <circle cx="1075" cy="452" r="19" fill="#f2efe6"/><circle cx="1075" cy="452" r="19" fill="url(#shine)"/>
+          <circle cx="1110" cy="390" r="19" fill="#f2efe6"/><circle cx="1110" cy="390" r="19" fill="url(#shine)"/>
+          <circle cx="1110" cy="432" r="19" fill="#f2efe6"/><circle cx="1110" cy="432" r="19" fill="url(#shine)"/>
+          <circle cx="1110" cy="474" r="19" fill="#f2efe6"/><circle cx="1110" cy="474" r="19" fill="url(#shine)"/>
+          <circle cx="1230" cy="610" r="19" fill="#f2efe6"/><circle cx="1230" cy="610" r="19" fill="url(#shine)"/>
+        </g>
+        <rect width="1600" height="900" fill="url(#vig)"/>
+      </svg>
+      <span class="play"></span>
+      <span class="chip">Стіл 5 · 18:32–20:32</span>
+    </div>
+
+    <div class="facts">
+      <div><b>Full HD</b><span>чітко видно стіл і кулі</span></div>
+      <div><b>3 дні</b><span>архів зіграних ігор</span></div>
+      <div><b>−50%</b><span>щасливі години, 12:00–14:00</span></div>
     </div>
   </div>
-</div>
+</header>
 
-<main class="wrap">
-
-<section id="how">
-  <h2>Як це працює</h2>
-  <ol class="steps">
-    <li><div class="num"><b>1</b></div><p>Відскануйте QR-код на своєму столі — відкриється бот.</p></li>
-    <li><div class="num"><b>2</b></div><p>Оберіть зіграну гру (30 хв, 1 год, 2 год…) або запис наступної.</p></li>
-    <li><div class="num"><b>3</b></div><p>Оберіть якість — для телефону чи висока. Ціна однакова.</p></li>
-    <li><div class="num"><b>4</b></div><p>Оплатіть карткою, Apple Pay або Google Pay і отримайте відео в Telegram.</p></li>
-  </ol>
-  <p class="mute">Відео без звуку. Замовити відео столу можна лише після сканування QR-коду на цьому столі — так ми бережемо приватність гостей.</p>
+<section class="sec alt" id="how">
+  <div class="wrap">
+    <h2>Чотири кроки. Кілька хвилин.</h2>
+    <p class="sub">Без реєстрації і застосунків — усе в Telegram.</p>
+    <ol class="steps">
+      <li><h3>Скануйте QR</h3><p>QR-код на вашому столі відкриває бота.</p></li>
+      <li><h3>Оберіть гру</h3><p>Зіграні 30 хв, 1 год, 2 год… або запис наступної.</p></li>
+      <li><h3>Оберіть якість</h3><p>Для телефону чи висока — ціна однакова.</p></li>
+      <li><h3>Отримайте відео</h3><p>Оплата карткою, Apple Pay або Google Pay — і відео в чаті.</p></li>
+    </ol>
+    <p class="note">Відео без звуку. Замовити відео столу можна лише після сканування QR-коду на цьому столі — так ми бережемо приватність гостей.</p>
+  </div>
 </section>
 
-<section id="prices">
-  <h2>Ціни</h2>
-  <div class="prices">
-    <div>
-      <h3>Вже зіграна гра</h3>
-      <table>
-        <tr><th>Тривалість</th><th class="r">Ціна</th></tr>
-        <tr><td>30 хв</td><td class="r">100 грн</td></tr>
-        <tr><td>1 год</td><td class="r">140 грн</td></tr>
-        <tr><td>1 год 30 хв</td><td class="r">180 грн</td></tr>
-        <tr><td>2 год</td><td class="r">220 грн</td></tr>
-        <tr><td>3 год</td><td class="r">300 грн</td></tr>
-      </table>
-    </div>
-    <div>
-      <h3>Запис наступної гри</h3>
-      <table>
-        <tr><th>Тривалість</th><th class="r">Ціна</th></tr>
-        <tr><td>30 хв</td><td class="r">70 грн</td></tr>
-        <tr><td>1 год</td><td class="r">100 грн</td></tr>
-        <tr><td>2 год</td><td class="r">155 грн</td></tr>
-        <tr><td>3 год</td><td class="r">210 грн</td></tr>
-      </table>
-    </div>
-  </div>
-  <p class="mute">Мінімальна ціна замовлення — 70 грн. Точну ціну бот показує перед оплатою.</p>
+<section class="sec" id="prices">
+  <div class="wrap">
+    <h2>Ціни</h2>
+    <p class="sub">Що довша гра, то дешевша хвилина.</p>
 
-  <div class="extras">
-    <div>
-      <h3>Знижки</h3>
-      <ul>
-        <li><b>Щасливі години:</b> відео, що починається з 12:00 до 13:59, — −50% (до 3 годин, мінімум 50 грн).</li>
-        <li><b>Перше замовлення:</b> наступні 30 хвилин гри — безкоштовно.</li>
-        <li>Те саме відео в іншій якості — безкоштовно, один раз протягом 3 днів.</li>
-      </ul>
+    <div class="cards">
+      <div class="card">
+        <h3>Вже зіграна гра</h3>
+        <p class="hint">Запис з архіву за останні 3 дні.</p>
+        <ul class="rows">
+          <li><span>30 хв</span><span class="p">100 грн</span></li>
+          <li><span>1 год</span><span class="p">140 грн</span></li>
+          <li><span>1 год 30 хв</span><span class="p">180 грн</span></li>
+          <li><span>2 год</span><span class="p">220 грн</span></li>
+          <li><span>3 год</span><span class="p">300 грн</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Запис наступної гри</h3>
+        <p class="hint">Замовте зараз — відео прийде після гри.</p>
+        <ul class="rows">
+          <li><span>30 хв</span><span class="p">70 грн</span></li>
+          <li><span>1 год</span><span class="p">100 грн</span></li>
+          <li><span>2 год</span><span class="p">155 грн</span></li>
+          <li><span>3 год</span><span class="p">210 грн</span></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h3>Абонементи на 30 днів</h3>
-      <table>
-        <tr><td>Buffalo PRO 60 хв<br><span class="mute">30 відео до 60 хв, до 5 на день</span></td><td class="r">1200 грн</td></tr>
-        <tr><td>Buffalo PRO 120 хв<br><span class="mute">30 відео до 120 хв, до 5 на день</span></td><td class="r">1800 грн</td></tr>
-      </table>
+
+    <div class="perks">
+      <div class="perk hl"><div class="k">−50%</div><h3>Щасливі години</h3><p>Відео, що починається з 12:00 до 13:59, — до 3 годин, мінімум 50 грн.</p></div>
+      <div class="perk"><div class="k">0 грн</div><h3>Перше замовлення</h3><p>Наступні 30 хвилин гри — у подарунок.</p></div>
+      <div class="perk"><div class="k">0 грн</div><h3>Інша якість</h3><p>Те саме відео в іншій якості — один раз протягом 3 днів.</p></div>
+    </div>
+
+    <div class="subs">
+      <h3 class="t">Абонементи на 30 днів</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>Buffalo PRO 60 хв</h3>
+          <p class="hint">30 відео до 60 хв, до 5 на день.</p>
+          <ul class="rows"><li><span>30 днів</span><span class="p">1200 грн</span></li></ul>
+        </div>
+        <div class="card">
+          <h3>Buffalo PRO 120 хв</h3>
+          <p class="hint">30 відео до 120 хв, до 5 на день.</p>
+          <ul class="rows"><li><span>30 днів</span><span class="p">1800 грн</span></li></ul>
+        </div>
+      </div>
+    </div>
+    <p class="note">Мінімальна ціна замовлення — 70 грн. Точну ціну бот показує перед оплатою.</p>
+  </div>
+</section>
+
+<section class="sec alt" id="pay">
+  <div class="wrap">
+    <h2>Оплата, доставка<br>і повернення</h2>
+    <div class="cols">
+      <div><h3>Оплата</h3><p>Картка Visa/Mastercard, Apple Pay або Google Pay через monobank. Дані картки бот не бачить і не зберігає.</p></div>
+      <div><h3>Доставка</h3><p>Відео приходить у чат бота: зіграна гра — зазвичай за кілька хвилин, запис наперед — після його завершення.</p></div>
+      <div><h3>Повернення</h3><p>Протягом 12 годин натисніть у боті «Проблема з відео». Адміністратор розгляне заявку за 12 годин; якщо проблема підтвердиться — повернемо 100% на картку.</p></div>
+    </div>
+    <p class="note">Якщо відео не вдалося підготувати, гроші не списуються. Повні умови — у <a href="oferta.html">публічній оферті</a>.</p>
+  </div>
+</section>
+
+<section class="sec cta">
+  <div class="wrap">
+    <h2>Зіграли красиво?<br>Збережіть це.</h2>
+    <div class="actions">
+      <a class="btn" href="https://t.me/BuffaloUngvarVideoBot">Відкрити бота</a>
+      <a class="more" href="https://t.me/BuffaloUngvarVideoBot">@BuffaloUngvarVideoBot</a>
     </div>
   </div>
 </section>
 
-<section id="pay">
-  <h2>Оплата, доставка і повернення</h2>
-  <div class="terms">
-    <div><h3>Оплата</h3><p>Картка Visa/Mastercard, Apple Pay або Google Pay через monobank. Дані картки бот не бачить і не зберігає.</p></div>
-    <div><h3>Доставка</h3><p>Відео приходить у чат бота: зіграна гра — зазвичай за кілька хвилин, запис наперед — після його завершення.</p></div>
-    <div><h3>Повернення</h3><p>Протягом 12 годин натисніть у боті «Проблема з відео». Адміністратор розгляне заявку за 12 годин; якщо проблема підтвердиться — повернемо 100% на картку.</p></div>
-  </div>
-  <p class="mute">Якщо відео не вдалося підготувати, гроші не списуються. Повні умови — у <a href="oferta.html">публічній оферті</a>.</p>
-</section>
-
-</main>
-
-<section class="contacts" id="contacts">
+<section class="sec alt" id="contacts">
   <div class="wrap">
     <h2>Контакти</h2>
-    <div class="grid">
-      <div>
-        <p><b>Більярдний клуб Buffalo Ungvár</b></p>
-        <p><a href="https://maps.google.com/?q=Ужгород,+вул.+Заньковецької,+89">м. Ужгород, вул. Заньковецької, 89</a></p>
-        <p>Працюємо цілодобово</p>
-      </div>
-      <div>
-        <p>Телефон: <a href="tel:+380950409180">+380 95 040 91 80</a></p>
-        <p>E-mail: <a href="mailto:serhijkorol27@gmail.com">serhijkorol27@gmail.com</a></p>
-        <p>Telegram: <a href="https://t.me/BuffaloUngvarVideoBot">@BuffaloUngvarVideoBot</a></p>
-      </div>
+    <div class="contact">
+      <div><h3>Адреса</h3><p><a href="https://maps.google.com/?q=Ужгород,+вул.+Заньковецької,+89">м. Ужгород, вул. Заньковецької, 89</a></p><p style="color:var(--mute)">Працюємо цілодобово</p></div>
+      <div><h3>Телефон і e-mail</h3><p><a href="tel:+380950409180">+380 95 040 91 80</a></p><p><a href="mailto:serhijkorol27@gmail.com">serhijkorol27@gmail.com</a></p></div>
+      <div><h3>Telegram</h3><p><a href="https://t.me/BuffaloUngvarVideoBot">@BuffaloUngvarVideoBot</a></p></div>
     </div>
-    <p class="small">Продавець: ФОП Король Сергій Юрійович, РНОКПП 2885016878.</p>
   </div>
 </section>
+
 <footer>
   <div class="wrap">
+    <span class="seller">Продавець: ФОП Король Сергій Юрійович, РНОКПП 2885016878.</span>
     <span>© Buffalo Ungvár</span>
     <a href="oferta.html">Публічна оферта</a>
     <a href="oferta.html#privacy">Конфіденційність</a>
